@@ -14,7 +14,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 @Service
 public class MessageService {
-    private BlockingQueue<Message> queue = new ArrayBlockingQueue<Message>(Const.SIZE_OF_QUEUE);
+    private BlockingQueue<Message> queue = new ArrayBlockingQueue<>(Const.SIZE_OF_QUEUE);
 
     public void message() throws InterruptedException {
 
